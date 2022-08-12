@@ -1,3 +1,6 @@
+
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from "../NotificationButton"
 import "./styles.css"
 
@@ -7,11 +10,19 @@ function SalesCard() {
             <h2 className="cor-titulo-vendas">Vendas</h2>
             <div>
                 <div className="forma-caixa-espaco-data1">
-                    <input className="forma-caixa-data1" type="text" />
-                </div>
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => { }}
+                        className="forma-caixa-data1"
+                        dateFormat="dd/MM/yyyy"
+                    />                </div>
                 <div className="forma-caixa-espaco-data1">
-                    <input className="forma-caixa-data1" type="text" />
-                </div>
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => { }}
+                        className="forma-caixa-data1"
+                        dateFormat="dd/MM/yyyy"
+                    />               </div>
             </div>
             <div>
 
@@ -38,7 +49,7 @@ function SalesCard() {
                             <td>R$ 55300,00</td>
                             <td>
                                 <div className="botao-red-btn-caixa">
- <NotificationButton/>
+                                    <NotificationButton />
                                 </div>
                             </td>
                         </tr>
@@ -51,7 +62,7 @@ function SalesCard() {
                             <td>R$ 55300,00</td>
                             <td>
                                 <div className="botao-red-btn-caixa">
-                                <NotificationButton/>
+                                    <NotificationButton />
                                 </div>
                             </td>
                         </tr>
@@ -64,7 +75,7 @@ function SalesCard() {
                             <td>R$ 55300,00</td>
                             <td>
                                 <div className="botao-red-btn-caixa">
-                                <NotificationButton/>
+                                    <NotificationButton />
                                 </div>
                             </td>
                         </tr>
