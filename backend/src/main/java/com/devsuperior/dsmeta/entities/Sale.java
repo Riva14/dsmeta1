@@ -21,8 +21,7 @@ public class Sale {
 	private Double amount;
 	private LocalDate date;
 	
-	public Sale() {
-		
+	public Sale() {	
 	}
 
 	public Long getId() {
